@@ -1,0 +1,18 @@
+import React from 'react'
+
+const Card = ({messageRandom, colorRandom, clickBtn}) => {
+
+    const styleBtn = {
+        backgroundColor: colorRandom
+    }
+
+  return (
+    <article className= 'card' style={{color: 'white'}}>
+        <h4>{messageRandom.quote}</h4>
+        <p><i>{messageRandom.author}</i></p>
+        <button className="btn" style={styleBtn} onClick={clickBtn}> <b>&#62;</b></button>
+    </article>
+  )
+}
+
+export default Card
